@@ -1,0 +1,29 @@
+[project]
+name = "pinjected-error-reports"
+version = "0.1.8a2"
+description = "Add your description here"
+authors = [
+    { name = "proboscis", email = "nameissoap@gmail.com" }
+]
+dependencies = [
+    "pinjected>=0.2.234",
+    "pinjected-openai @ file:///Users/s22625/repos/pinjected-error-reports/../pinjected-openai",
+    "pinjected-niji-voice @ file:///Users/s22625/repos/pinjected-error-reports/../pinjected-niji-voice",
+    "injected-utils>=0.1.30",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pinjected_error_reports"]

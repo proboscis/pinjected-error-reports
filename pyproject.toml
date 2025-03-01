@@ -7,8 +7,8 @@ authors = [
 ]
 dependencies = [
     "pinjected>=0.2.234",
-    "pinjected-openai @ file:///Users/s22625/repos/pinjected-error-reports/../pinjected-openai",
-    "pinjected-niji-voice @ file:///Users/s22625/repos/pinjected-error-reports/../pinjected-niji-voice",
+    "pinjected-openai @ git+ssh://git@github.com/proboscis/pinjected_openai.git",
+    "pinjected-niji-voice @ git+ssh://git@github.com/proboscis/pinjected-niji-voice.git",
     "injected-utils>=0.1.30",
 ]
 readme = "README.md"
